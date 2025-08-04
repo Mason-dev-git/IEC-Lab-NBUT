@@ -1,0 +1,3 @@
+[submodule "third_party/mylib"]
+	path = third_party/mylib
+	url = https://gitee.com/Canrad/mylib.git

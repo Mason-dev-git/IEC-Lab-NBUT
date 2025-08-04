@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "datatype.h": "c",
+        "key.h": "c",
+        "ui.h": "c",
+        "oled.h": "c",
+        "ti_msp_dl_config.h": "c",
+        "k230.h": "c",
+        "motor.h": "c"
+    }
+}
