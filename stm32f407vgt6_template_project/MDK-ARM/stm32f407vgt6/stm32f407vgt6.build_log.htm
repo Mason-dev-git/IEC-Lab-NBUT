@@ -21,13 +21,84 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-D:\GitHub_Repository\IEC-Lab-NBUT\stm32f407vgt6_template_project\MDK-ARM\stm32f407vgt6.uvprojx
+d:\GitHub_Repository\IEC-Lab-NBUT\stm32f407vgt6_template_project\MDK-ARM\stm32f407vgt6.uvprojx
 Project File Date:  08/07/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5_MDK5.39\ARM\ARMCC\Bin'
 Build target 'stm32f407vgt6'
-"stm32f407vgt6\stm32f407vgt6.axf" - 0 Error(s), 0 Warning(s).
+compiling time_util.c...
+compiling test.c...
+compiling gw_grayscale.c...
+compiling servo.c...
+..\bsp\servo.c(38): warning:  #1-D: last line of file ends without a newline
+  }
+..\bsp\servo.c: 1 warning, 0 errors
+compiling app.c...
+..\app\app.c(27): warning:  #177-D: variable "str_x"  was declared but never referenced
+      char str_x[6];
+..\app\app.c: 1 warning, 0 errors
+compiling main.c...
+compiling oled.c...
+compiling tofx00f.c...
+..\bsp\tofx00f.c(40): warning:  #167-D: argument of type "volatile u8 *" is incompatible with parameter of type "uint8_t *"
+      HAL_UART_Receive_DMA(g_tofxxf_huart, g_buffer, BUFFER_SIZE);
+..\bsp\tofx00f.c: 1 warning, 0 errors
+compiling debug.c...
+..\bsp\debug.c(48): warning:  #520-D: initialization with "{...}" expected for aggregate object
+      uint8_t frametail[4] = 0x80000000;//easyhex协议传输int32数据帧尾
+..\bsp\debug.c(48): warning:  #69-D: integer conversion resulted in truncation
+      uint8_t frametail[4] = 0x80000000;//easyhex协议传输int32数据帧尾
+..\bsp\debug.c: 2 warnings, 0 errors
+compiling motor.c...
+compiling config.c...
+compiling grayscale.c...
+compiling isr.c...
+..\app\isr.c(23): warning:  #223-D: function "Controller_IRQHandler" declared implicitly
+          Controller_IRQHandler();
+..\app\isr.c: 1 warning, 0 errors
+compiling misc.c...
+..\bsp\misc.c(101): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return (f32)val * 3.3 / 4096;
+..\bsp\misc.c: 1 warning, 0 errors
+compiling bsp.c...
+compiling wt901c.c...
+compiling controller.c...
+..\app\controller.c(101): warning:  #550-D: variable "weight_sum"  was set but never used
+  	    float weight_sum=0;
+..\app\controller.c(26): warning:  #550-D: variable "ref_angel"  was set but never used
+  static float ref_angel;
+..\app\controller.c: 2 warnings, 0 errors
+compiling ui.c...
+..\app\ui.c(335): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[0] = (pid[0] + 0.01) > pid_max_val ? pid_max_val : (pid[0] + 0.01);
+..\app\ui.c(335): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[0] = (pid[0] + 0.01) > pid_max_val ? pid_max_val : (pid[0] + 0.01);
+..\app\ui.c(341): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[0] = (pid[0] - 0.01) < pid_min_val ? pid_min_val : (pid[0] - 0.01);
+..\app\ui.c(341): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[0] = (pid[0] - 0.01) < pid_min_val ? pid_min_val : (pid[0] - 0.01);
+..\app\ui.c(367): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[1] = (pid[1] + 0.01) > pid_max_val ? pid_max_val : (pid[1] + 0.01);
+..\app\ui.c(367): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[1] = (pid[1] + 0.01) > pid_max_val ? pid_max_val : (pid[1] + 0.01);
+..\app\ui.c(373): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[1] = (pid[1] - 0.01) < pid_min_val ? pid_min_val : (pid[1] - 0.01);
+..\app\ui.c(373): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[1] = (pid[1] - 0.01) < pid_min_val ? pid_min_val : (pid[1] - 0.01);
+..\app\ui.c(399): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[2] = (pid[2] + 0.01) > pid_max_val ? pid_max_val : (pid[2] + 0.01);
+..\app\ui.c(399): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[2] = (pid[2] + 0.01) > pid_max_val ? pid_max_val : (pid[2] + 0.01);
+..\app\ui.c(405): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[2] = (pid[2] - 0.01) < pid_min_val ? pid_min_val : (pid[2] - 0.01);
+..\app\ui.c(405): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          pid[2] = (pid[2] - 0.01) < pid_min_val ? pid_min_val : (pid[2] - 0.01);
+..\app\ui.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=26178 RO-data=1030 RW-data=116 ZI-data=3684  
+FromELF: creating hex file...
+"stm32f407vgt6\stm32f407vgt6.axf" - 0 Error(s), 21 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +121,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
