@@ -52,5 +52,7 @@ uint16_t Grayscale_ReadData(void);
 uint16_t Grayscale_ReadChannel(uint16_t channel);
 void Grayscale_ReadAllChannels(uint16_t *data_list);
 
+void test_grayscale(void);
+
 #endif
 

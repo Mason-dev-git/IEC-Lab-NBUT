@@ -2,7 +2,7 @@
 #define BSP_H
 
 // 如果使用测试，定义为1，否则为0
-#define USE_TEST 0
+#define USE_TEST 1
 // 13线编码器电机
 #define USE_13_MOTOR 1
 

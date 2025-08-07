@@ -20,7 +20,7 @@ void test_main(void)
     // test_tof400f();
     // test_gyro();
 
-    test_flash();
+    // test_flash();
 }
 
 void test_debuger(void)
@@ -103,22 +103,6 @@ void test_gyro(void)
     }
 }
 
-void test_grayscale(void)
-{
-    uint8_t Digtal;
-    while (1) {
-        Digtal = IIC_Get_Digtal();
-        debug_print("%d,%d,%d,%d,%d,%d,%d,%d\n",
-                    (Digtal >> 0) & 0x01,
-                    (Digtal >> 1) & 0x01,
-                    (Digtal >> 2) & 0x01,
-                    (Digtal >> 3) & 0x01,
-                    (Digtal >> 4) & 0x01,
-                    (Digtal >> 5) & 0x01,
-                    (Digtal >> 6) & 0x01,
-                    (Digtal >> 7) & 0x01);
-    }
-}
 
 
 void test_motor(void)

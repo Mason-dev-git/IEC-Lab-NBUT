@@ -15,7 +15,6 @@ void test_gyro(void);
 void test_debuger(void);
 void test_tof400f(void);
 void test_flash(void);
-void test_grayscale(void);
 void test_motor(void);
 void test_wt901c(void);
 

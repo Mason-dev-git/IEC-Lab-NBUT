@@ -3,71 +3,54 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: lx Canrad, 1, LIC=TIVNB-284HR-FWP2N-Y8SKQ-4IUFV-WG51U
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: we lyj, HP Inc., LIC=UJWP0-BKEL0-RADDM-XR079-TP51T-JRZ3T
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
-Toolchain Path:  D:\Program Files\Keil5\32\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 6 (build 750)
-Assembler:       Armasm.exe V5.06 update 6 (build 750)
-Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
-Library Manager: ArmAr.exe V5.06 update 6 (build 750)
-Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
-CPU DLL:         SARMCM3.DLL V5.38.0.0
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\Keil5_MDK5.39\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-d:\desktop\diansai2025\stm32f407vgt6\MDK-ARM\stm32f407vgt6.uvprojx
-Project File Date:  07/29/2025
+D:\GitHub_Repository\IEC-Lab-NBUT\stm32f407vgt6_template_project\MDK-ARM\stm32f407vgt6.uvprojx
+Project File Date:  08/07/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files\Keil5\32\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5_MDK5.39\ARM\ARMCC\Bin'
 Build target 'stm32f407vgt6'
-compiling pid.c...
-..\app\pid.c(254): warning:  #177-D: variable "d_error"  was declared but never referenced
-      float error, d_error, kp_out, ki_out, kd_out, output;
-..\app\pid.c: 1 warning, 0 errors
-compiling app.c...
-..\app\app.c(25): warning:  #177-D: variable "str_x"  was declared but never referenced
-      char str_x[6];
-..\app\app.c: 1 warning, 0 errors
-compiling config.c...
-compiling controller.c...
-..\app\controller.c(27): warning:  #550-D: variable "ref_angel"  was set but never used
-  static float ref_angel;
-..\app\controller.c: 1 warning, 0 errors
-linking...
-Program Size: Code=24460 RO-data=1028 RW-data=96 ZI-data=3688  
-FromELF: creating hex file...
-"stm32f407vgt6\stm32f407vgt6.axf" - 0 Error(s), 3 Warning(s).
+"stm32f407vgt6\stm32f407vgt6.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
+                ARM::CMSIS@5.9.0
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.6.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.12.0.pack
-                Keil.STM32F4xx_DFP.2.12.0
-                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
+                Keil::STM32F4xx_DFP@3.0.0
+                STMicroelectronics STM32F4 Series Device Support
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_stm32f407vgt6
-  D:/Program Files/Keil5/32/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  D:/Program Files/Keil5/32/ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  D:/Keil5_MDK5.39/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
+   * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
